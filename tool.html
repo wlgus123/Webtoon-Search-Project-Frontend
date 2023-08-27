@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>툰문으로 들었소</title>
+    <style>
+        #btn_search {
+            overflow: visible;
+            position: relative;
+        }
+        #btn_login {
+            margin-left: 300px;
+        }
+        #search_query {
+            width: 580px;
+            font-size: larger;
+            border-left: 1px solid gray;
+            padding-left: 10px;
+        }
+        
+        .search_bar {
+            display: flex;
+            text-align: center;
+            border: 1px solid gray;
+            display: inline-block;
+            border-radius: 3px;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 50px;
+            width: 700px;
+            margin-left: 400px;
+        }
+        .select_content {
+            font-size: 15pt;
+            margin-top: 15px;
+        }
+        
+        button {
+            background-color: white;
+        }
+        * {
+            outline: none;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <tr>
+    <td>
+        <!--검색바-->
+        <div class="search_bar">
+            <select class="select_content">
+                <option>웹툰</option>
+                <option>소설</option>
+            </select>
+            <input type="text" id="search_query" name="query" placeholder="제목을 입력하세요" accesskey="s" maxlength="100">
+            <button id="btn_search" type="submit" aria-pressed="false">
+                <img src="search.png" height="15" width="15">
+            </button>
+        </div>
+    </td>
+    <td>
+        <!--로그인 아이콘-->
+        <form method="post" action="login.html">
+            <button name="login" id="btn_login" type="submit" >
+                <img src="login.png" height="70" width="70">
+            </button>
+        </form>
+    </td>
+    </tr>
+    </table>
+</body>
+</html>
